@@ -54,3 +54,86 @@ p identifier
 #=> {1=>"Hi there.\n", 2=>"I hope you are having a nice day!\n"}
 #=> 8018346
 ```
+
+#### How would you translate a hash to an array? Can you translate arrays to hashes?
+
+Hash to array, by creating a matrix:
+
+```ruby
+person = {
+    first_name: 'Hernán',
+    last_name: 'Cervera',
+}
+def hash_to_array(hash)
+    output = []
+    hash.each {|pair| output.push(pair) }
+    output
+end
+p hash_to_array(person)
+#=> [[:first_name, "Hernán"], [:last_name, "Cervera"]]
+```
+
+Array to hash, by using indices as keys:
+
+```ruby
+people = ['Hernán', 'Gladys']
+def array_to_hash(array)
+    output = {}
+    array.each_with_index do |value, index|
+        output[index] = value
+    end
+    output
+end
+p array_to_hash(people)
+#=> {0=>"Hernán", 1=>"Gladys"}
+```
+
+#### Can you iterate through a hash?
+
+Yes, by using the `each` method:
+
+```ruby
+person = {
+    first_name: 'Hernán',
+    last_name: 'Cervera',
+}
+person.each {|value| p value}
+#=> [:first_name, "Hernán"]
+#=> [:last_name, "Cervera"]
+```
+
+#### You can use Ruby arrays as stacks. What other common data structures do arrays support?
+
+List:
+
+```ruby
+list = [ :hernan, "Gladys", 42 ]
+p list
+#=> [:hernan, "Gladys", 42]
+```
+
+Queue (FIFO):
+
+```ruby
+queue = [ :hernan, :gladys, :elvia ]
+p queue.shift()
+p queue.shift()
+p queue.shift()
+p queue
+#=> :hernan
+#=> :gladys
+#=> :elvia
+#=> []
+```
+
+Dequeue (LIFO & FIFO):
+
+```ruby
+dequeue = [ :hernan, :gladys, :elvia ]
+p dequeue.shift()
+p dequeue.pop()
+p dequeue
+#=> :hernan
+#=> :elvia
+#=> [:gladys]
+```
