@@ -33,11 +33,11 @@
 ```ruby
 phrase = 'Ruby is boring'
 p phrase
-# => "Ruby is boring"
+#=> "Ruby is boring"
 p phrase.gsub(/boring/, 'fun')
-# => "Ruby is fun"
+#=> "Ruby is fun"
 p phrase
-# => "Ruby is boring"
+#=> "Ruby is boring"
 ```
 
 `gsub!`: Mutate the string.
@@ -45,11 +45,11 @@ p phrase
 ```ruby
 phrase = 'Ruby is boring'
 p phrase
-# => "Ruby is boring"
+#=> "Ruby is boring"
 p phrase.gsub!(/boring/, 'fun')
-# => "Ruby is fun"
+#=> "Ruby is fun"
 p phrase
-# => "Ruby is fun"
+#=> "Ruby is fun"
 ```
 
 From the [Ruby 3.1 API documentation](https://rubyapi.org/3.1/o/String.html#method-i-gsub):
@@ -71,14 +71,14 @@ From the [Ruby 3.1 API documentation](https://rubyapi.org/3.1/o/String.html#meth
 
 ```ruby
 puts 'Hello, world.'
-# => Hello, world.
+#=> Hello, world.
 ```
 
 #### For the string "Hello, Ruby," find the index of the word "Ruby."
 
 ```ruby
 p 'Hello, Ruby'.index(/Ruby/)
-# => 7
+#=> 7
 ```
 
 Ruby is 0-indexed.
@@ -87,24 +87,24 @@ Ruby is 0-indexed.
 
 ```ruby
 (1..10).each do |i|
-  puts 'Hernán'
+    puts 'Hernán'
 end
-# ...
-# => Hernán
-# => Hernán
-# => Hernán
+#...
+#=> Hernán
+#=> Hernán
+#=> Hernán
 ```
 
 #### Print the string "This is sentence number 1," where the number 1 changes from 1 to 10
 
 ```ruby
 (1..10).each do |i|
-  puts "This is sentence number #{i},"
+    puts "This is sentence number #{i},"
 end
-# ...
-# => This is sentence number 8,
-# => This is sentence number 9,
-# => This is sentence number 10,
+#...
+#=> This is sentence number 8,
+#=> This is sentence number 9,
+#=> This is sentence number 10,
 ```
 
 #### Run a Ruby program from a file
