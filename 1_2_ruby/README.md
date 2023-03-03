@@ -197,7 +197,7 @@ numbers.each_slice(4) {|numbers_slice| p numbers_slice.join(",")}
 > anywhere in that line. You will need to do a simple regular expression match and read lines from a
 > file. (This is surprisingly simple in Ruby.) If you want, include line numbers.
 
-Example usage of [grep.rb](./1_2_ruby/grep.rb):
+Example usage of [grep.rb](./grep.rb):
 
 ```bash
 ruby ./1_2_ruby/grep.rb TRACE ./1_2_ruby/file.log
