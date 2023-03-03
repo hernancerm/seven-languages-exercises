@@ -1,32 +1,22 @@
 # Ruby. Day 1: Finding a Nanny
 
-<!--toc:start-->
-- [Find](#find)
-    - [The Ruby API](#the-ruby-api)
-    - [The free online version of Programming Ruby: The Pragmatic Programmer’s Guide](#the-free-online-version-of-programming-ruby-the-pragmatic-programmers-guide)
-    - [A method that substitutes part of a string](#a-method-that-substitutes-part-of-a-string)
-    - [Information about Ruby's regular expressions](#information-about-rubys-regular-expressions)
-    - [Information about Ruby's ranges](#information-about-rubys-ranges)
-- [Do](#do)
-    - [Print the string "Hello, world."](#print-the-string-hello-world)
-    - [For the string "Hello, Ruby," find the index of the word "Ruby."](#for-the-string-hello-ruby-find-the-index-of-the-word-ruby)
-    - [Print your name ten times](#print-your-name-ten-times)
-    - [Print the string "This is sentence number 1," where the number 1 changes from 1 to 10](#print-the-string-this-is-sentence-number-1-where-the-number-1-changes-from-1-to-10)
-    - [Run a Ruby program from a file](#run-a-ruby-program-from-a-file)
-    - [Bonus problem](#bonus-problem)
-<!--toc:end-->
-
 ## Find
 
-#### The Ruby API
+#### Find 1
+
+> The Ruby API
 
 <https://rubyapi.org/3.1>
 
-#### The free online version of Programming Ruby: The Pragmatic Programmer’s Guide
+#### Find 2
+
+> The free online version of Programming Ruby: The Pragmatic Programmer’s Guide
 
 <https://ruby-doc.com/docs/ProgrammingRuby/>
 
-#### A method that substitutes part of a string
+#### Find 3
+
+> A method that substitutes part of a string
 
 `gsub`: Do not mutate the string.
 
@@ -57,24 +47,32 @@ From the [Ruby 3.1 API documentation](https://rubyapi.org/3.1/o/String.html#meth
 > In general, if there exist both bang and non-bang version of method, the bang! mutates and the
 > non-bang! does not.
 
-#### Information about Ruby's regular expressions
+#### Find 4
+
+> Information about Ruby's regular expressions
 
 <https://rubyapi.org/3.1/o/regexp>
 
-#### Information about Ruby's ranges
+#### Find 5
+
+> Information about Ruby's ranges
 
 <https://rubyapi.org/3.1/o/range>
 
 ## Do
 
-#### Print the string "Hello, world."
+#### Do 1
+
+> Print the string "Hello, world."
 
 ```ruby
 puts 'Hello, world.'
 #=> Hello, world.
 ```
 
-#### For the string "Hello, Ruby," find the index of the word "Ruby."
+#### Do 2
+
+> For the string "Hello, Ruby," find the index of the word "Ruby."
 
 ```ruby
 p 'Hello, Ruby'.index(/Ruby/)
@@ -83,11 +81,13 @@ p 'Hello, Ruby'.index(/Ruby/)
 
 Ruby is 0-indexed.
 
-#### Print your name ten times
+#### Do 3
+
+> Print your name ten times
 
 ```ruby
 (1..10).each do |i|
-    puts 'Hernán'
+  puts 'Hernán'
 end
 #...
 #=> Hernán
@@ -95,11 +95,13 @@ end
 #=> Hernán
 ```
 
-#### Print the string "This is sentence number 1," where the number 1 changes from 1 to 10
+#### Do 4
+
+> Print the string "This is sentence number 1," where the number 1 changes from 1 to 10
 
 ```ruby
 (1..10).each do |i|
-    puts "This is sentence number #{i},"
+  puts "This is sentence number #{i},"
 end
 #...
 #=> This is sentence number 8,
@@ -107,11 +109,13 @@ end
 #=> This is sentence number 10,
 ```
 
-#### Run a Ruby program from a file
+#### Do 5
 
-Use the `ruby` command, e.g. `ruby m.rb`. The previous command fails since `m.rb` doesn't exist.
+> Run a Ruby program from a file
 
-#### Bonus problem
+Use `ruby FILE_PATH`. See [Do 6](#do-6) for an example.
+
+#### Do 6
 
 > Bonus problem: If you’re feeling the need for a little more, write a program that picks a random
 > number. Let a player guess the number, telling the player whether the guess is too low or too
@@ -120,4 +124,4 @@ Use the `ruby` command, e.g. `ruby m.rb`. The previous command fails since `m.rb
 > (Hint: rand(10) will generate a random number from 0 to 9, and gets will read a string from the
 > keyboard that you can translate to an integer.)
 
-[bonus.rb](./bonus.rb)
+Try out [bonus.rb](./bonus.rb): `ruby ./1_1_ruby/bonus.rb`
