@@ -1,7 +1,3 @@
-# Problem statement:
-# If you’re feeling the need for a little more, write a program that picks a random number. Let a
-# player guess the number, telling the player whether the guess is too low or too high.
-
 target_lower_limit = 1
 target_upper_limit = 10
 target = rand(Range.new(1, 10))
