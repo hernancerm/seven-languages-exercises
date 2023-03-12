@@ -2,7 +2,7 @@
 
 ## Find
 
-#### Find 1
+### Find 1
 
 > Find out how to access files with and without code blocks. What is the benefit of the code block?
 
@@ -57,7 +57,7 @@ p identifier
 #=> 8018346
 ```
 
-#### Find 2
+### Find 2
 
 > How would you translate a hash to an array? Can you translate arrays to hashes?
 
@@ -92,7 +92,7 @@ p array_to_hash(people)
 #=> {0=>"Hernán", 1=>"Gladys"}
 ```
 
-#### Find 3
+### Find 3
 
 > Can you iterate through a hash?
 
@@ -108,7 +108,7 @@ person.each {|value| p value}
 #=> [:last_name, "Cervera"]
 ```
 
-#### Find 4
+### Find 4
 
 > You can use Ruby arrays as stacks. What other common data structures do arrays support?
 
@@ -148,7 +148,7 @@ p dequeue
 
 ## Do
 
-#### Do 1
+### Do 1
 
 > Print the contents of an array of sixteen numbers, four numbers at a time, using just each. Now,
 > do the same with each_slice in Enumerable.
@@ -184,14 +184,14 @@ numbers.each_slice(4) {|numbers_slice| p numbers_slice.join(",")}
 #=> "13,14,15,16"
 ```
 
-#### TODO: Do 2
+### TODO: Do 2
 
 > The Tree class was interesting, but it did not allow you to specify a new tree with a clean user
 > interface. Let the initializer accept a nested structure of hashes. You should be able to specify
 > a tree like this: {'grandpa' => { 'dad' => {'child 1' => {}, 'child 2' => {} }, 'uncle' => {'child
 > 3' => {}, 'child 4' => {} } } }.
 
-#### Do 3
+### Do 3
 
 > Write a simple grep that will print the lines of a file having any occurrences of a phrase
 > anywhere in that line. You will need to do a simple regular expression match and read lines from a

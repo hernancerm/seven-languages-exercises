@@ -2,19 +2,19 @@
 
 ## Find
 
-#### Find 1
+### Find 1
 
 > The Ruby API
 
 <https://rubyapi.org/3.1>
 
-#### Find 2
+### Find 2
 
 > The free online version of Programming Ruby: The Pragmatic Programmer’s Guide
 
 <https://ruby-doc.com/docs/ProgrammingRuby/>
 
-#### Find 3
+### Find 3
 
 > A method that substitutes part of a string
 
@@ -47,13 +47,13 @@ From the [Ruby 3.1 API documentation](https://rubyapi.org/3.1/o/String.html#meth
 > In general, if there exist both bang and non-bang version of method, the bang! mutates and the
 > non-bang! does not.
 
-#### Find 4
+### Find 4
 
 > Information about Ruby's regular expressions
 
 <https://rubyapi.org/3.1/o/regexp>
 
-#### Find 5
+### Find 5
 
 > Information about Ruby's ranges
 
@@ -61,7 +61,7 @@ From the [Ruby 3.1 API documentation](https://rubyapi.org/3.1/o/String.html#meth
 
 ## Do
 
-#### Do 1
+### Do 1
 
 > Print the string "Hello, world."
 
@@ -70,7 +70,7 @@ puts 'Hello, world.'
 #=> Hello, world.
 ```
 
-#### Do 2
+### Do 2
 
 > For the string "Hello, Ruby," find the index of the word "Ruby."
 
@@ -81,7 +81,7 @@ p 'Hello, Ruby'.index(/Ruby/)
 
 Ruby is 0-indexed.
 
-#### Do 3
+### Do 3
 
 > Print your name ten times
 
@@ -95,7 +95,7 @@ end
 #=> Hernán
 ```
 
-#### Do 4
+### Do 4
 
 > Print the string "This is sentence number 1," where the number 1 changes from 1 to 10
 
@@ -109,13 +109,13 @@ end
 #=> This is sentence number 10,
 ```
 
-#### Do 5
+### Do 5
 
 > Run a Ruby program from a file
 
 Use `ruby FILE_PATH`. See [Do 6](#do-6) for an example.
 
-#### Do 6
+### Do 6
 
 > Bonus problem: If you’re feeling the need for a little more, write a program that picks a random
 > number. Let a player guess the number, telling the player whether the guess is too low or too
