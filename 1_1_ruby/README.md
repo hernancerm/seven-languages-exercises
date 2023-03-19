@@ -113,7 +113,18 @@ end
 
 > Run a Ruby program from a file
 
-Use `ruby FILE_PATH`. See [Do 6](#do-6) for an example.
+Simply provide the file path to the `ruby` command. For example:
+
+```shell
+ruby ./1_1_ruby/hello.rb
+```
+
+Output:
+
+```text
+Hello, World!
+```
+
 
 ### Do 6
 
