@@ -10,7 +10,7 @@ came before: 1, 1, 2, 3, 5, 8, 13, 21, and so on. Write a program to find the nt
 fib(1) is 1, and fib(4) is 3. As a bonus, solve the problem with recursion and with loops.
 </table></tr></td>
 
-[do1.io](./do1.io)
+[do1_loop.io](./do1_loop.io)
 
 [do1_recursive.io](./do1_recursive.io)
 
@@ -48,6 +48,10 @@ that are x elements long. set(x, y, value) should set a value, and get(x, y) sho
 value.
 </table></tr></td>
 
+[Matrix.io](./Matrix.io)
+
+[do5.io](./do5.io)
+
 ### Do 6
 
 <table><tr><td>
@@ -55,14 +59,23 @@ Bonus: Write a transpose method so that (new_matrix get(y, x)) == matrix get(x, 
 list.
 </table></tr></td>
 
+TODO: [do6.io](./do6.io)
+
 ### Do 7
 
 <table><tr><td>
 Write the matrix to a file, and read a matrix from a file.
 </table></tr></td>
 
+[Serializer.io](./Serializer.io)
+
+[do7.io](./do7.io)
+
 ### Do 8
 
 <table><tr><td>
-Write a program that gives you ten tries to guess a random number from 1--100. If you would like,
+Write a program that gives you ten tries to guess a random number from 1–100. If you would like,
+give a hint of "hotter" or "colder" after the first guess.
 </table></tr></td>
+
+[do8.io](./do8.io)

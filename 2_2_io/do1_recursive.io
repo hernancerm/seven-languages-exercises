@@ -1,10 +1,9 @@
 findNthFibonacciNumberRecursive := method(previous, current, n,
-    if(n == 1, output := previous)
-    if(n == 2, output := current)
-    if(n > 2,
-        output := findNthFibonacciNumberRecursive(current, previous + current, n - 1)
-    )
-    output
+    # `ifTrue` and `ifFalse` as alternatives to `if`. See:
+    # https://iolanguage.org/guide/guide.html#Control-Flow-true-false-and-nil
+    (n == 1) ifTrue(return previous)
+    (n == 2) ifTrue(return current)
+    findNthFibonacciNumberRecursive(current, previous + current, n - 1)
 )
 
 findNthFibonacciNumber := method(n,
