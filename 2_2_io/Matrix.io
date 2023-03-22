@@ -7,6 +7,8 @@ Matrix dim := method(x, y,
         for(i, 1, x, row append(nil))
         self value append(row)
     )
+    self cols := x
+    self rows := y
     self
 )
 

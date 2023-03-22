@@ -59,7 +59,7 @@ Bonus: Write a transpose method so that (new_matrix get(y, x)) == matrix get(x, 
 list.
 </table></tr></td>
 
-TODO: [do6.io](./do6.io)
+[do6.io](./do6.io)
 
 ### Do 7
 
